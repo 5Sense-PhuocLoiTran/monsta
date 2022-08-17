@@ -34,7 +34,25 @@
     
 
 -----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Prata&amp;subset=cyrillic,cyrillic-ext,vietnamese");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Prata&amp;subset=cyrillic,cyrillic-ext,vietnamese"); */
+
+@font-face {
+  font-family: SVN-Gotham;
+  src: url(../fonts/SVN-Gotham\ Regular.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  src: url(../fonts/SVN-Gotham\ Bold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  src: url(../fonts/SVN-Gotham\ Light.ttf) format("truetype");
+  font-weight: 300;
+}
 * {
   box-sizing: border-box;
 }
@@ -48,11 +66,14 @@
 /*----------------------------------------*/
 /*-- Google Font --*/
 /*-- Common Style --*/
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -62,14 +83,20 @@ body {
   font-style: normal;
   font-weight: 400;
   visibility: visible;
-  font-family: "Rubik", sans-serif;
+  font-family: "SVN-Gotham", serif;
   color: #5a5a5a;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
   margin-top: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -108,7 +135,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
-a, button {
+a,
+button {
   color: inherit;
   line-height: inherit;
   text-decoration: none;
@@ -119,7 +147,11 @@ a, button {
   box-shadow: none;
 }
 
-a, button, img, input, span {
+a,
+button,
+img,
+input,
+span {
   transition: all 0.3s ease 0s;
 }
 
@@ -137,7 +169,8 @@ a:hover {
   text-decoration: none;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   cursor: pointer;
 }
 
@@ -185,7 +218,8 @@ ul {
   text-transform: uppercase;
 }
 
-.no-gutters > .col, .no-gutters > [class*="col-"] {
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
   margin: 0;
@@ -243,22 +277,26 @@ ul {
 /*-- 
     - Input Placeholder
 -----------------------------------------*/
-input:-moz-placeholder, textarea:-moz-placeholder {
+input:-moz-placeholder,
+textarea:-moz-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
@@ -282,8 +320,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 9999;
   border-radius: 50%;
   border: 2px solid #fff;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #scrollUp:hover i {
   animation-name: fadeInUp;
@@ -525,7 +563,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 999;
   top: 0;
   height: 100vh;
-  transition: .5s;
+  transition: 0.5s;
   left: 0;
   margin-left: -300px;
   padding: 50px 20px 30px;
@@ -623,19 +661,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #c09578;
 }
 .Offcanvas_footer ul li.twitter a {
-  background: #1DA1F2;
+  background: #1da1f2;
 }
 .Offcanvas_footer ul li.twitter a:hover {
   background: #c09578;
 }
 .Offcanvas_footer ul li.pinterest a {
-  background: #BD081B;
+  background: #bd081b;
 }
 .Offcanvas_footer ul li.pinterest a:hover {
   background: #c09578;
 }
 .Offcanvas_footer ul li.google-plus a {
-  background: #DD4D42;
+  background: #dd4d42;
 }
 .Offcanvas_footer ul li.google-plus a:hover {
   background: #c09578;
@@ -896,7 +934,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   visibility: visible;
 }
-.top_right > ul > li:hover ul.dropdown_language, .top_right > ul > li:hover .header_black ul.dropdown_currency, .header_black .top_right > ul > li:hover ul.dropdown_currency, .top_right > ul > li:hover .header_black ul.dropdown_links, .header_black .top_right > ul > li:hover ul.dropdown_links {
+.top_right > ul > li:hover ul.dropdown_language,
+.top_right > ul > li:hover .header_black ul.dropdown_currency,
+.header_black .top_right > ul > li:hover ul.dropdown_currency,
+.top_right > ul > li:hover .header_black ul.dropdown_links,
+.header_black .top_right > ul > li:hover ul.dropdown_links {
   top: 100%;
   opacity: 1;
   visibility: visible;
@@ -964,15 +1006,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #c09578;
 }
 
-.dropdown_currency, .dropdown_language, .header_black .dropdown_currency, .header_black .dropdown_links, .dropdown_links {
+.dropdown_currency,
+.dropdown_language,
+.header_black .dropdown_currency,
+.header_black .dropdown_links,
+.dropdown_links {
   position: absolute;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   min-width: 200px;
   text-align: center;
   top: 125%;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   overflow: hidden;
   left: -154%;
   z-index: 9999;
@@ -982,14 +1028,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   visibility: hidden;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .dropdown_currency, .dropdown_language, .header_black .dropdown_currency, .header_black .dropdown_links, .dropdown_links {
+  .dropdown_currency,
+  .dropdown_language,
+  .header_black .dropdown_currency,
+  .header_black .dropdown_links,
+  .dropdown_links {
     left: -10px;
     min-width: 144px;
     padding: 0 10px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .dropdown_currency, .dropdown_language, .header_black .dropdown_currency, .header_black .dropdown_links, .dropdown_links {
+  .dropdown_currency,
+  .dropdown_language,
+  .header_black .dropdown_currency,
+  .header_black .dropdown_links,
+  .dropdown_links {
     left: -10px;
     min-width: 144px;
     padding: 0 10px;
@@ -1041,22 +1095,30 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #c09578;
 }
 
-.dropdown_language li, .header_black .dropdown_currency li, .header_black .dropdown_links li {
+.dropdown_language li,
+.header_black .dropdown_currency li,
+.header_black .dropdown_links li {
   border-bottom: 1px solid #ebebeb;
   line-height: 36px;
   padding: 5px 0;
 }
-.dropdown_language li:last-child, .header_black .dropdown_currency li:last-child, .header_black .dropdown_links li:last-child {
+.dropdown_language li:last-child,
+.header_black .dropdown_currency li:last-child,
+.header_black .dropdown_links li:last-child {
   border-bottom: 0;
 }
-.dropdown_language li a, .header_black .dropdown_currency li a, .header_black .dropdown_links li a {
+.dropdown_language li a,
+.header_black .dropdown_currency li a,
+.header_black .dropdown_links li a {
   text-transform: capitalize;
   display: block;
   font-size: 12px;
   color: #242424;
   text-align: center;
 }
-.dropdown_language li a:hover, .header_black .dropdown_currency li a:hover, .header_black .dropdown_links li a:hover {
+.dropdown_language li a:hover,
+.header_black .dropdown_currency li a:hover,
+.header_black .dropdown_links li a:hover {
   color: #c09578;
 }
 
@@ -1431,12 +1493,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: 999;
   right: 0;
   top: 0;
-  transition: .5s;
+  transition: 0.5s;
   transform: translateX(100%);
 }
 .mini_cart.active {
   transform: translateX(0);
-  transition: .5s;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 767px) {
   .mini_cart {
@@ -1464,7 +1526,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #242424;
   text-transform: capitalize;
   font-size: 14px;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .cart_info a:hover {
   color: #c09578;
@@ -1536,7 +1598,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-right: 35px;
 }
 .logo_sticky a img {
-  max-width: 120px;
+  max-width: 240px;
 }
 
 .header_bottom {
@@ -1646,14 +1708,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: left;
 }
 
-.main_menu nav ul li:hover .sub_menu, .main_menu nav ul li:hover .mega_menu {
+.main_menu nav ul li:hover .sub_menu,
+.main_menu nav ul li:hover .mega_menu {
   opacity: 1;
   visibility: visible;
   -webkit-transform: perspective(600px) rotateX(0deg);
   transform: perspective(600px) rotateX(0deg);
 }
 
-.main_menu nav ul li ul li.active a, .main_menu nav ul li ul li a:hover {
+.main_menu nav ul li ul li.active a,
+.main_menu nav ul li ul li a:hover {
   color: #c09578;
 }
 
@@ -1866,8 +1930,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   min-width: 200px;
   text-align: center;
   top: 120%;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   overflow: hidden;
   left: 0;
   z-index: 9999;
@@ -1892,11 +1956,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: center;
 }
 
-.header_two .dropdown_language, .header_two .header_black .dropdown_currency, .header_black .header_two .dropdown_currency, .header_two .header_black .dropdown_links, .header_black .header_two .dropdown_links {
+.header_two .dropdown_language,
+.header_two .header_black .dropdown_currency,
+.header_black .header_two .dropdown_currency,
+.header_two .header_black .dropdown_links,
+.header_black .header_two .dropdown_links {
   left: 0;
 }
 @media only screen and (max-width: 767px) {
-  .header_two .dropdown_language, .header_two .header_black .dropdown_currency, .header_black .header_two .dropdown_currency, .header_two .header_black .dropdown_links, .header_black .header_two .dropdown_links {
+  .header_two .dropdown_language,
+  .header_two .header_black .dropdown_currency,
+  .header_black .header_two .dropdown_currency,
+  .header_two .header_black .dropdown_links,
+  .header_black .header_two .dropdown_links {
     left: -33px;
   }
 }
@@ -2443,11 +2515,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   left: auto;
   min-width: 160px;
 }
-.header_three .dropdown_language, .header_three .header_black .dropdown_currency, .header_black .header_three .dropdown_currency, .header_three .header_black .dropdown_links, .header_black .header_three .dropdown_links {
+.header_three .dropdown_language,
+.header_three .header_black .dropdown_currency,
+.header_black .header_three .dropdown_currency,
+.header_three .header_black .dropdown_links,
+.header_black .header_three .dropdown_links {
   left: 0;
 }
 @media only screen and (max-width: 767px) {
-  .header_three .dropdown_language, .header_three .header_black .dropdown_currency, .header_black .header_three .dropdown_currency, .header_three .header_black .dropdown_links, .header_black .header_three .dropdown_links {
+  .header_three .dropdown_language,
+  .header_three .header_black .dropdown_currency,
+  .header_black .header_three .dropdown_currency,
+  .header_three .header_black .dropdown_links,
+  .header_black .header_three .dropdown_links {
     left: -45px;
   }
 }
@@ -2547,19 +2627,29 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .header_black .top_right > ul > li > a:not([href]):not([tabindex]):hover {
   color: #a8741a;
 }
-.header_black .dropdown_language, .header_black .dropdown_currency, .header_black .dropdown_links {
+.header_black .dropdown_language,
+.header_black .dropdown_currency,
+.header_black .dropdown_links {
   background: #242424;
 }
-.header_black .dropdown_language li, .header_black .dropdown_currency li, .header_black .dropdown_links li {
+.header_black .dropdown_language li,
+.header_black .dropdown_currency li,
+.header_black .dropdown_links li {
   border-bottom: 1px solid #2d2d2d;
 }
-.header_black .dropdown_language li:last-child, .header_black .dropdown_currency li:last-child, .header_black .dropdown_links li:last-child {
+.header_black .dropdown_language li:last-child,
+.header_black .dropdown_currency li:last-child,
+.header_black .dropdown_links li:last-child {
   border-bottom: 0;
 }
-.header_black .dropdown_language li a, .header_black .dropdown_currency li a, .header_black .dropdown_links li a {
+.header_black .dropdown_language li a,
+.header_black .dropdown_currency li a,
+.header_black .dropdown_links li a {
   color: #ffffff;
 }
-.header_black .dropdown_language li a:hover, .header_black .dropdown_currency li a:hover, .header_black .dropdown_links li a:hover {
+.header_black .dropdown_language li a:hover,
+.header_black .dropdown_currency li a:hover,
+.header_black .dropdown_links li a:hover {
   color: #a8741a;
 }
 .header_black .dropdown_links {
@@ -2680,7 +2770,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .header_black .cart_info a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .header_black .cart_info a:hover {
   color: #a8741a;
@@ -2708,7 +2798,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .header_black .main_menu nav > ul > li > a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
   text-transform: capitalize;
   font-size: 18px;
@@ -2719,7 +2809,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .header_black .main_menu nav > ul > li ul.sub_menu li a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .header_black .main_menu nav > ul > li ul.sub_menu li a:hover {
   color: #a8741a;
@@ -2730,7 +2820,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .header_black .main_menu nav > ul > li ul.mega_menu > li > a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .header_black .main_menu nav > ul > li ul.mega_menu > li > a:hover {
   color: #a8741a;
@@ -2824,11 +2914,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .header_black .dropdown_setting ul li a {
   color: #ffffff;
 }
-.header_black.black_two .dropdown_language, .header_black.black_two .dropdown_currency, .header_black.black_two .dropdown_links {
+.header_black.black_two .dropdown_language,
+.header_black.black_two .dropdown_currency,
+.header_black.black_two .dropdown_links {
   left: 0;
 }
 @media only screen and (max-width: 767px) {
-  .header_black.black_two .dropdown_language, .header_black.black_two .dropdown_currency, .header_black.black_two .dropdown_links {
+  .header_black.black_two .dropdown_language,
+  .header_black.black_two .dropdown_currency,
+  .header_black.black_two .dropdown_links {
     left: -40px;
   }
 }
@@ -2937,14 +3031,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .sidebar_black_version .main_menu nav > ul > li ul.sub_menu li a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .sidebar_black_version .main_menu nav > ul > li ul.sub_menu li a:hover {
   color: #a8741a;
 }
 .sidebar_black_version .main_menu nav > ul > li ul.sub_menu li a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .sidebar_black_version .main_menu nav > ul > li ul.mega_menu {
   background: #242424;
@@ -2952,7 +3046,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .sidebar_black_version .main_menu nav > ul > li ul.mega_menu > li > a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   text-transform: capitalize;
 }
 .sidebar_black_version .main_menu nav > ul > li ul.mega_menu > li > a:hover {
@@ -2969,7 +3063,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .sidebar_black_version .main_menu nav > ul > li > a {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   text-transform: capitalize;
   font-size: 18px;
 }
@@ -2978,7 +3072,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .sidebar_black_version .sidebar_newsletter h3 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 400;
@@ -3118,7 +3212,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .header_black.black_three .cart_link > a {
   border: 0;
 }
-.header_black.black_three .dropdown_language, .header_black.black_three .dropdown_currency, .header_black.black_three .dropdown_links {
+.header_black.black_three .dropdown_language,
+.header_black.black_three .dropdown_currency,
+.header_black.black_three .dropdown_links {
   left: 0;
   right: auto;
 }
@@ -3493,8 +3589,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   float: right;
   font-size: 15px;
   line-height: 35px;
-  transition: .3s;
-  -webkit-transition: .3s;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .categories_menu_toggle > ul > li > a i.fa-angle-right {
@@ -3537,8 +3633,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding: 25px 20px 23px;
   overflow: hidden;
   top: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -3780,8 +3876,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background: #fff;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 65%;
   visibility: hidden;
 }
@@ -3995,9 +4091,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .slider_content h1 {
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
+  font-weight: 300 !important;
   color: #212121;
-  text-transform: capitalize;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4105,7 +4200,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 
-.active .slider_content p, .active .slider_content h1, .active .slider_content a {
+.active .slider_content p,
+.active .slider_content h1,
+.active .slider_content a {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
@@ -4248,7 +4345,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .slider_black .slider_content h1 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -4526,7 +4623,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .banner_fullwidth {
-  background: url(../img/bg/banner4.jpg) no-repeat scroll center center/cover;
+  background: url(../img/bg/banner_watch.png) no-repeat scroll center center/cover;
   margin-bottom: 64px;
 }
 @media only screen and (max-width: 767px) {
@@ -4549,7 +4646,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .banner_text {
-  text-align: center;
+  /* text-align: center; */
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -4577,7 +4674,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 50px;
   text-transform: capitalize;
   margin-bottom: 10px;
-  color: #242424;
+  color: #fff;
   font-weight: 700;
   line-height: 65px;
 }
@@ -4597,7 +4694,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 16px;
   margin: 0;
   display: block;
-  color: #5a5a5a;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .banner_text > span {
@@ -4786,7 +4883,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .banner_black .banner_content h2 {
   color: #a8741a;
   font-weight: 400;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner_black .banner_content h2 {
@@ -4862,7 +4959,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .black_fullwidth .banner_text h2 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
 }
 .black_fullwidth .banner_text span {
@@ -4933,7 +5030,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .banner_section_five .banner_text h2 {
   font-size: 30px;
   color: #a8741a;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
   line-height: 44px;
 }
@@ -5032,7 +5129,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .banner_fullwidth.black_two .banner_text h2 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-size: 48px;
   font-weight: 400;
 }
@@ -5199,7 +5296,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: capitalize;
   font-weight: 700;
   display: inline-block;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   border-left: 2px solid #ebebeb;
   padding: 0 30px;
   border-radius: 2px;
@@ -5387,7 +5484,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .action_links ul li.add_to_cart a {
   line-height: 35px;
   padding: 0 18px;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   width: 100%;
   text-transform: capitalize;
   font-size: 12px;
@@ -5593,7 +5690,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .product_black_section .product_tab_button ul.nav li a {
   border-left: 2px solid #2d2d2d;
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 @media only screen and (max-width: 767px) {
   .product_black_section .product_tab_button ul.nav li a {
@@ -5628,7 +5725,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   padding-right: 5px !important;
 }
 .product_black_section .quick_button a {
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-size: 14px;
 }
 .product_black_section .quick_button a:hover {
@@ -5641,7 +5738,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #a8741a;
 }
 .product_black_section .product_content h3 {
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -5674,14 +5771,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #a8741a;
 }
 .product_black_section .action_links ul li.add_to_cart a {
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .product_black_section .section_title::before {
   background: #2d2d2d;
 }
 .product_black_section .section_title h2 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   background: #242424;
   font-weight: 400;
 }
@@ -5903,7 +6000,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .blog_black .section_title h2 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   background: #242424;
   font-weight: 400;
 }
@@ -5920,7 +6017,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: left;
 }
 .blog_black .blog_content h3 {
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -6061,7 +6158,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .newsletter_black h2 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
 }
 @media only screen and (max-width: 767px) {
@@ -6100,7 +6197,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-left: 20px;
   height: 48px;
   background: #2e2e2e;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
 }
 .newsletter_black .newsletter_content form button:hover {
@@ -6191,7 +6288,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin: auto;
   margin-bottom: auto;
   margin-bottom: 18px;
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .shipping_icone.icone_1::before {
   content: "\f276";
@@ -6212,7 +6309,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .shipping_black .single-shipping h3 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
 }
 .shipping_black .single-shipping p {
@@ -6238,7 +6335,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .shipping_two.s_black2 .shipping_content h3 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
   font-size: 15px;
   margin-bottom: 10px;
@@ -6486,7 +6583,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .footer_black .widgets_container > h3 {
   color: #ffffff;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 400;
 }
 .footer_black .footer_contact p {
@@ -6513,7 +6610,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #a8741a;
 }
 .footer_black .product_name h3 {
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
   text-transform: capitalize;
 }
 .footer_black .product_name h3 a {
@@ -6534,7 +6631,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .footer_black .footer_middel_menu ul li a {
   color: #a0a0a0;
-  font-family: "Prata", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .footer_black .footer_middel_menu ul li a:hover {
   color: #a8741a;
@@ -6947,12 +7044,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .widget_list.widget_categories > ul > li > a:hover {
   color: #c09578;
 }
-.widget_list.widget_brands ul li, .widget_list.widget_color ul li {
+.widget_list.widget_brands ul li,
+.widget_list.widget_color ul li {
   line-height: 44px;
   position: relative;
   padding-left: 28px;
 }
-.widget_list.widget_brands ul li::before, .widget_list.widget_color ul li::before {
+.widget_list.widget_brands ul li::before,
+.widget_list.widget_color ul li::before {
   position: absolute;
   content: "\f383";
   font-family: "Ionicons";
@@ -6968,17 +7067,20 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   left: 0;
   transform: translatey(-50%);
 }
-.widget_list.widget_brands ul li span, .widget_list.widget_color ul li span {
+.widget_list.widget_brands ul li span,
+.widget_list.widget_color ul li span {
   color: #5a5a5a;
   font-size: 15px;
   float: right;
 }
-.widget_list.widget_brands ul li a, .widget_list.widget_color ul li a {
+.widget_list.widget_brands ul li a,
+.widget_list.widget_color ul li a {
   color: #5a5a5a;
   font-size: 15px;
   text-transform: capitalize;
 }
-.widget_list.widget_brands ul li a:hover, .widget_list.widget_color ul li a:hover {
+.widget_list.widget_brands ul li a:hover,
+.widget_list.widget_color ul li a:hover {
   color: #c09578;
 }
 
@@ -6996,7 +7098,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   margin-bottom: 22px;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
   background: #c09578;
   border: 0;
   border-radius: 0;
@@ -7418,7 +7522,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 .shop_area .quick_button a {
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
 }
 
 .shop_fullwidth {
@@ -7813,7 +7917,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #242424;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: "Rubik", sans-serif;
+  font-family: "SVN-Gotham", serif;
 }
 .reviews_wrapper .product_ratting {
   margin-bottom: 20px;
@@ -7823,7 +7927,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #242424;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: "Rubik", sans-serif;
+  font-family: "SVN-Gotham", serif;
 }
 
 .comment_title {
@@ -7885,7 +7989,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #fff;
   border-bottom: 1px solid #ebebeb;
   border-left: 1px solid #ebebeb;
-  content: '';
+  content: "";
   display: block;
   height: 10px;
   left: -6px;
@@ -8078,7 +8182,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .grouped_form table tbody tr td.grouped-product-list.price p::before {
   color: #f6f6f6;
-  content: '\f058';
+  content: "\f058";
   display: inline-block;
   font-family: FontAwesome;
   font-size: 1em;
@@ -8329,7 +8433,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: capitalize;
   padding: 10px;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .table_desc .cart_page table tbody tr td {
   border-bottom: 1px solid #ebebeb;
@@ -8373,7 +8477,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .table_desc .cart_page table tbody tr td.product_quantity label {
   color: #242424;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 700;
   margin-right: 5px;
 }
@@ -8388,7 +8492,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   min-width: 120px;
 }
 
-.cart_page table thead tr:last-child th, .table_desc table tbody tr td:last-child {
+.cart_page table thead tr:last-child th,
+.table_desc table tbody tr td:last-child {
   border-right: 0;
 }
 
@@ -8751,7 +8856,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .checkout_form label {
   color: #242424;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 700;
   margin-bottom: 7px;
 }
@@ -8847,7 +8952,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .order_table table thead tr th {
   color: #242424;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   min-width: 50%;
   text-align: center;
   padding: 15px 0;
@@ -8861,7 +8966,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .order_table table tfoot tr th {
   color: #242424;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   min-width: 50%;
   text-align: center;
   padding: 15px 0;
@@ -9218,7 +9323,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   -webkit-transform: translatey(-50%);
   transform: translatey(-50%);
   right: 20px;
-  color: #BCBCBC;
+  color: #bcbcbc;
 }
 @media only screen and (max-width: 767px) {
   .card-header.card_accor button i {
@@ -9231,7 +9336,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-align: left;
   color: #c09578;
   font-size: 14px;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
   font-weight: 700;
 }
 .card-header.card_accor button.btn-link.collapsed {
@@ -9339,7 +9444,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .table-responsive table thead tr th {
   text-align: center;
   color: #242424;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
 }
 .table-responsive table tbody tr td {
   border-right: 1px solid #ebebeb;
@@ -9364,7 +9469,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #212121;
 }
 
-.input-radio span input[type="radio"], .account_login_form form span input[type="checkbox"] {
+.input-radio span input[type="radio"],
+.account_login_form form span input[type="checkbox"] {
   width: 15px;
   height: 15px;
   margin-right: 2px;
@@ -9696,7 +9802,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 700;
   color: #242424;
   text-transform: uppercase;
-  font-family: "Playfair Display", serif;
+  font-family: "SVN-Gotham", serif;
 }
 
 /*about page css end*/
@@ -9741,7 +9847,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .our_services {
   padding: 58px 0 34px;
-  background: #ECECEC;
+  background: #ececec;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .our_services {
@@ -9885,7 +9991,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .priceing_table {
-  background: #ECECEC;
+  background: #ececec;
   padding: 70px 0 40px;
 }
 @media only screen and (max-width: 767px) {
@@ -9897,8 +10003,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .single_priceing {
   background: #fff;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
-  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  -webkit-box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -9952,7 +10058,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-.priceing_list a.list_button, .priceing_list a:hover {
+.priceing_list a.list_button,
+.priceing_list a:hover {
   background: #c09578;
   border-color: #c09578;
   color: #fff;
@@ -10787,7 +10894,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-family: "Rubik", sans-serif;
+  font-family: "SVN-Gotham", serif;
 }
 .comment_list .comment_content h5 a {
   color: #c09578;
@@ -11240,7 +11347,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   }
 }
 #frm_subscribe form input {
-  background: #EBEBEB;
+  background: #ebebeb;
   padding: 0 122px 0 20px;
   height: 45px;
   border: 0;
@@ -11298,7 +11405,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 #boxes #frm_subscribe #notification .success {
-  color: #67D7BB;
+  color: #67d7bb;
 }
 
 #popup2 {
@@ -11402,8 +11509,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 20px;
   color: #5a5a5a;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 0;
   text-transform: uppercase;
   padding: 0 15px;
@@ -11591,7 +11698,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #5a5a5a;
 }
 .compare-table .table tbody tr td.pro-addtocart .add-to-cart span {
-  transition: .3s;
+  transition: 0.3s;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 700;
