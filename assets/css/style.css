@@ -1727,8 +1727,7 @@ textarea:-ms-input-placeholder {
   position: absolute;
   min-width: 200px;
   padding: 30px 25px;
-  background: #fff;
-  border: 1px solid #ebebeb;
+  background: rgba(0, 0, 0, 0.865);
   -webkit-transform: perspective(600px) rotateX(-90deg);
   transform: perspective(600px) rotateX(-90deg);
   -webkit-transform-origin: 0 0 0;
@@ -1759,7 +1758,7 @@ textarea:-ms-input-placeholder {
 }
 
 .main_menu nav > ul > li > ul > li > a {
-  color: #808080;
+  color: #ffffff;
   font-size: 13px;
   text-transform: capitalize;
   line-height: 18px;
@@ -1780,8 +1779,7 @@ textarea:-ms-input-placeholder {
   position: absolute;
   min-width: 580px;
   padding: 30px 25px 35px;
-  background: #fff;
-  border: 1px solid #ebebeb;
+  background: rgba(0, 0, 0, 0.877);
   -webkit-transform: perspective(600px) rotateX(-90deg);
   transform: perspective(600px) rotateX(-90deg);
   -webkit-transform-origin: 0 0 0;
@@ -1804,7 +1802,7 @@ textarea:-ms-input-placeholder {
 
 .main_menu nav > ul > li > ul.mega_menu > li > a {
   text-transform: uppercase;
-  color: #242424;
+  color: #ffffff;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -1814,7 +1812,7 @@ textarea:-ms-input-placeholder {
 }
 
 .main_menu nav > ul > li > ul.mega_menu li ul li a {
-  color: #808080;
+  color: #ffffff;
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 11px;
@@ -6481,7 +6479,7 @@ textarea:-ms-input-placeholder {
   height: 40px;
   line-height: 40px;
   border: 1px solid #e1e1e1;
-  background: none;
+  background: none    ;
   text-align: center;
   border-radius:25%;
   display: block;
