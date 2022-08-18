@@ -5285,7 +5285,7 @@ textarea:-ms-input-placeholder {
 .product_tab_button ul {
   justify-content: center;
   margin: 0 auto;
-  border: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
 }
 @media only screen and (max-width: 767px) {
   .product_tab_button ul {
@@ -5295,44 +5295,6 @@ textarea:-ms-input-placeholder {
 .product_tab_button ul.nav {
   display: inline-block;
   position: relative;
-}
-.product_tab_button ul.nav::before {
-  content: "";
-  width: 200px;
-  height: 2px;
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  background-image: linear-gradient(to right, transparent, #ebebeb);
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .product_tab_button ul.nav::before {
-    width: 150px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .product_tab_button ul.nav::before {
-    display: none;
-  }
-}
-.product_tab_button ul.nav::after {
-  content: "";
-  width: 200px;
-  height: 2px;
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  background-image: linear-gradient(to right, #ebebeb, transparent);
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .product_tab_button ul.nav::after {
-    width: 150px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .product_tab_button ul.nav::after {
-    display: none;
-  }
 }
 .product_tab_button ul li {
   display: inline-block;
@@ -5359,7 +5321,6 @@ textarea:-ms-input-placeholder {
   font-weight: 700;
   display: inline-block;
   font-family: "SVN-Gotham", serif;
-  border-left: 2px solid #ebebeb;
   padding: 0 30px;
   border-radius: 2px;
   -webkit-transition: 0.3s;
@@ -5389,7 +5350,7 @@ textarea:-ms-input-placeholder {
   content: "";
   width: 104%;
   height: 109%;
-  border: 2px solid #5a5a5a
+  border-bottom: 2px solid #5a5a5a
   ;
   left: -2px;
   top: -2px;
