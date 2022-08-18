@@ -24,7 +24,6 @@
 .top_footer {
   background: #e6e6e6;
   padding: 15px 0px;
-  margin-bottom: 50px;
 }
 
 .left_icon {
@@ -43,4 +42,16 @@
 
 .box_content h4:last-child {
   margin-bottom: 0px;
+}
+.footer_widgets {
+  background: #000;
+}
+.footer_widgets .widgets_container h3,.footer_widgets .widgets_container p,.footer_widgets .widgets_container a{
+  color: #fff;
+}
+.footer_widgets .footer_menu ul li a{
+  color: #fff;;
+}
+.footer_widgets .container .footer_top{
+  padding-top: 60px;
 }
