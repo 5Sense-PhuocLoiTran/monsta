@@ -42,12 +42,12 @@
 }
 @font-face {
   font-family: 'SVN-Gotham';
-  src: url(../fonts/SVN-Gotham\ Regular.otf) format("opentype");
+  src: url(../fonts/SVN-Gotham\ Book.otf) format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: 'SVN-Gotham';
-  src: url(../fonts/SVN-Gotham\ Book.otf) format("opentype");
+  src: url(../fonts/SVN-Gotham\ Regular.otf) format("opentype");
   font-weight: 500;
 }
 @font-face {
@@ -1178,7 +1178,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*header top css end*/
-/* 2.2 header middel css here */
+/* 2.2 header middle css here */
 .home_contact {
   display: flex;
 }
@@ -1256,24 +1256,24 @@ textarea:-ms-input-placeholder {
   }
 }
 
-.header_middel {
+.header_middle {
   padding: 40px 0;
   border-bottom: 1px solid #ebebeb;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_middel {
+  .header_middle {
     padding: 30px 0 32px;
     border-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_middel {
+  .header_middle {
     padding: 20px 0 23px;
     border-bottom: 0;
   }
 }
 
-.middel_right {
+.middle_right {
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1281,12 +1281,12 @@ textarea:-ms-input-placeholder {
   align-items: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .middel_right {
+  .middle_right {
     justify-content: center;
   }
 }
 @media only screen and (max-width: 767px) {
-  .middel_right {
+  .middle_right {
     justify-content: center;
   }
 }
@@ -1623,7 +1623,7 @@ textarea:-ms-input-placeholder {
   padding-bottom: 15px;
 }
 
-/*header middel css end*/
+/*header middle css end*/
 /* 2.4 main menu css here */
 .logo_sticky {
   display: none;
@@ -2049,16 +2049,16 @@ textarea:-ms-input-placeholder {
     padding: 0;
   }
 }
-.header_two .header_middel {
+.header_two .header_middle {
   padding: 20px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_two .header_middel {
+  .header_two .header_middle {
     padding: 30px 0 28px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_two .header_middel {
+  .header_two .header_middle {
     padding: 20px 0 23px;
   }
 }
@@ -2112,16 +2112,16 @@ textarea:-ms-input-placeholder {
 }
 
 /*home three css here*/
-.middel_right.middle_mobail3 {
+.middle_right.middle_mobail3 {
   display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .middel_right.middle_mobail3 {
+  .middle_right.middle_mobail3 {
     display: flex;
   }
 }
 @media only screen and (max-width: 767px) {
-  .middel_right.middle_mobail3 {
+  .middle_right.middle_mobail3 {
     display: flex;
   }
 }
@@ -2333,28 +2333,28 @@ textarea:-ms-input-placeholder {
 .header_three .logo a img {
   width: 130px;
 }
-.header_three .header_middel {
+.header_three .header_middle {
   padding: 19px 0;
   display: none;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  .header_three .header_middel {
+  .header_three .header_middle {
     display: block;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header_three .header_middel {
+  .header_three .header_middle {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_three .header_middel {
+  .header_three .header_middle {
     display: block;
     padding: 27px 0 28px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_three .header_middel {
+  .header_three .header_middle {
     display: block;
     padding: 20px 0 23px;
   }
@@ -2604,16 +2604,16 @@ textarea:-ms-input-placeholder {
     padding: 16px 0 10px;
   }
 }
-.header_black .header_middel {
+.header_black .header_middle {
   border-bottom: 1px solid #2d2d2d;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_black .header_middel {
+  .header_black .header_middle {
     border-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_black .header_middel {
+  .header_black .header_middle {
     border-bottom: 0;
   }
 }
@@ -2969,21 +2969,21 @@ textarea:-ms-input-placeholder {
     padding: 0;
   }
 }
-.header_black.black_two .header_middel {
+.header_black.black_two .header_middle {
   padding: 20px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_black.black_two .header_middel {
+  .header_black.black_two .header_middle {
     padding: 28px 0 30px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_black.black_two .middel_right {
+  .header_black.black_two .middle_right {
     padding: 35px 0 0;
   }
 }
 @media only screen and (max-width: 575px) {
-  .header_black.black_two .middel_right {
+  .header_black.black_two .middle_right {
     padding: 0;
   }
 }
@@ -3141,28 +3141,28 @@ textarea:-ms-input-placeholder {
     text-align: left !important;
   }
 }
-.header_black.black_three .header_middel {
+.header_black.black_three .header_middle {
   padding: 20px 0;
   display: none;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  .header_black.black_three .header_middel {
+  .header_black.black_three .header_middle {
     display: block;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header_black.black_three .header_middel {
+  .header_black.black_three .header_middle {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header_black.black_three .header_middel {
+  .header_black.black_three .header_middle {
     display: block;
     padding: 28px 0 30px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .header_black.black_three .header_middel {
+  .header_black.black_three .header_middle {
     display: block;
     padding: 20px 0 23px;
   }
@@ -3478,18 +3478,18 @@ textarea:-ms-input-placeholder {
   }
 }
 
-.middel_rightinfo_new {
+.middle_rightinfo_new {
   display: flex;
   align-items: center;
   margin-top: 7px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .middel_rightinfo_new {
+  .middle_rightinfo_new {
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .middel_rightinfo_new {
+  .middle_rightinfo_new {
     margin-top: 0;
   }
 }
@@ -6488,50 +6488,54 @@ textarea:-ms-input-placeholder {
   margin-left: 17px;
 }
 
-.footer_middel_menu {
+.footer_middle_menu {
   text-align: center;
   padding: 17px 0 15px;
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
 }
-.footer_middel_menu ul li {
+.footer_middle_menu ul li {
   display: inline-block;
   margin-right: 40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer_middel_menu ul li {
+  .footer_middle_menu ul li {
     margin-right: 24px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .footer_middel_menu ul li {
+  .footer_middle_menu ul li {
     margin-right: 20px;
   }
 }
-.footer_middel_menu ul li:last-child {
+.footer_middle_menu ul li:last-child {
   margin-right: 0;
 }
-.footer_middel_menu ul li a {
+.footer_middle_menu ul li a {
   font-size: 16px;
   text-transform: capitalize;
   color: #5a5a5a;
 }
-.footer_middel_menu ul li a:hover {
+.footer_middle_menu ul li a:hover {
   color: #5a5a5a;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer_middel_menu ul li a {
+  .footer_middle_menu ul li a {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .footer_middel_menu ul li a {
+  .footer_middle_menu ul li a {
     font-size: 13px;
   }
 }
-
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #666666;
+}
 .copyright_area {
-  text-align: center;
+  text-align: left;
 }
 .copyright_area p {
   text-transform: capitalize;
@@ -6615,15 +6619,15 @@ textarea:-ms-input-placeholder {
 .footer_black .simple_product_items:last-child {
   border-bottom: 0;
 }
-.footer_black .footer_middel_menu {
+.footer_black .footer_middle_menu {
   border-bottom: 1px solid #2d2d2d;
   border-top: 1px solid #2d2d2d;
 }
-.footer_black .footer_middel_menu ul li a {
+.footer_black .footer_middle_menu ul li a {
   color: #a0a0a0;
   font-family: "SVN-Gotham", serif;
 }
-.footer_black .footer_middel_menu ul li a:hover {
+.footer_black .footer_middle_menu ul li a:hover {
   color: #ffffff;
 }
 .footer_black .copyright_area p {
@@ -6934,11 +6938,11 @@ textarea:-ms-input-placeholder {
 .header_shop .header_top {
   padding: 7px 0;
 }
-.header_shop .header_middel {
+.header_shop .header_middle {
   padding: 40px 0 18px;
 }
 @media only screen and (max-width: 767px) {
-  .header_shop .header_middel {
+  .header_shop .header_middle {
     padding: 21px 0 18px;
   }
 }

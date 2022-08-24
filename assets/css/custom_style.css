@@ -46,14 +46,17 @@
 }
 .footer_widgets {
   background: #000;
+  color: #CCCCCC;
 }
 .footer_widgets .widgets_container h3,
-.footer_widgets .widgets_container p,
-.footer_widgets .widgets_container a {
+.footer_widgets .widgets_container h5 {
   color: #fff;
+  font-weight: 500;
 }
+.footer_widgets .widgets_container p,
+.footer_widgets .widgets_container a,
 .footer_widgets .footer_menu ul li a {
-  color: #fff;
+  color: #CCCCCC;
 }
 .footer_widgets .container .footer_top {
   padding-top: 60px;
@@ -69,7 +72,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
-  font-weight: 300;
 }
 .blog_section .single_post {
   padding: 15px;
