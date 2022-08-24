@@ -32,11 +32,12 @@
     animateOut: "fadeOut",
     autoplay: true,
     loop: true,
-    nav: false,
+    nav: true,
     autoplay: false,
     autoplayTimeout: 8000,
     items: 1,
     dots: true,
+    navText: ["<img src='assets/img/icon/nav_pre.svg'>", "<img src='assets/img/icon/nav_next.svg'>"],
   });
 
   /*---product_column3 activation---*/
