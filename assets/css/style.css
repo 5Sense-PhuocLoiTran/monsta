@@ -5372,11 +5372,11 @@ textarea:-ms-input-placeholder {
   }
 }
 .product_tab_button ul li a {
-  font-size: 20px;
+  font-size: 14px;
   color: #242424;
   line-height: 48px;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
   font-family: "SVN-Gotham", serif;
   padding: 0 30px;
