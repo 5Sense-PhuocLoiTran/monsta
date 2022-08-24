@@ -35,24 +35,28 @@
 
 -----------------------------------------------------------------------------------*/
 /* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Prata&amp;subset=cyrillic,cyrillic-ext,vietnamese"); */
-
 @font-face {
-  font-family: SVN-Gotham;
+  font-family: 'SVN-Gotham';
+  src: url(../fonts/SVN-Gotham\ Light.ttf) format("truetype"), url(../fonts/SVN-Gotham\ Light.otf) format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SVN-Gotham';
   src: url(../fonts/SVN-Gotham\ Regular.otf) format("opentype");
   font-weight: 400;
 }
-
 @font-face {
-  font-family: SVN-Gotham;
+  font-family: 'SVN-Gotham';
+  src: url(../fonts/SVN-Gotham\ Book.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SVN-Gotham';
   src: url(../fonts/SVN-Gotham\ Bold.ttf) format("truetype");
   font-weight: 600;
 }
 
-@font-face {
-  font-family: SVN-Gotham;
-  src: url(../fonts/SVN-Gotham\ Light.ttf) format("truetype");
-  font-weight: 300;
-}
+
 * {
   box-sizing: border-box;
 }
