@@ -1,3 +1,4 @@
+
 .single_post .img_post {
   position: relative;
   overflow: hidden;
@@ -68,6 +69,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
+  font-weight: 300;
 }
 .blog_section .single_post {
   padding: 15px;
@@ -90,6 +92,15 @@
   display: flex;
   margin-left: 2%;
   font-size: 25px !important;
+}
+
+.title-h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.fw-300 {
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 767px) {
